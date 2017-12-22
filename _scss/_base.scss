@@ -1,0 +1,59 @@
+$font: "Chivo";
+$font-2: "Source Sans Pro";
+
+$gray: #4c4c4f;
+$light-gray: #bbbbbb;
+
+body {
+  background: #f5f5f5;
+  padding: 1em;
+  font-family: $font-2;
+  color: $gray;
+}
+
+.site-name {
+  font-family: $font;
+  font-size: 2em;
+  a {
+    color: $gray;
+  }
+}
+
+.accent {
+  overflow: hidden;
+  a {
+    position: relative;
+    display: inline-block;
+    &:before, &:after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      height: 1px;
+      width: 9999px;
+      display: block;
+      background-color: $light-gray;
+    }
+    &:before {
+      right: 100%;
+      margin-right: 0.5em;
+    }
+    &:after {
+      left: 100%;
+      margin-left: 0.5em;
+    }
+  }
+}
+
+p {
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+}
+
+.footer {
+  text-align: center;
+  border-top: 1px solid $light-gray;
+  padding: 1em;
+}

@@ -1,0 +1,39 @@
+.menu {
+  .dropdown, .menu-link {
+    display: block;
+    padding: 1em;
+    margin-bottom: .5em;
+    font-family: $font-2;
+    font-weight: 500;
+    border-top: 1px solid $light-gray;
+    border-left: 1px solid $light-gray;
+    border-right: 1px solid $light-gray;
+    cursor: pointer;
+  }
+  .dropdown {
+    &:after {
+      content: "⌄";
+      float: right;
+    }
+  }
+  .menu-link {
+    color: $gray;
+  }
+}
+
+.submenu {
+  list-style: none;
+  padding-left: 1em;
+  display: none;
+  li {
+    font-family: $font-2;
+    font-size: .9em;
+    margin: .5em 0 0 0;
+    padding: 0;
+    cursor: pointer;
+  }
+}
+
+.dropdown-open:checked + .submenu {
+  display: block;
+}
