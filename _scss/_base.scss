@@ -4,11 +4,19 @@ $font-2: "Source Sans Pro";
 $gray: #4c4c4f;
 $light-gray: #bbbbbb;
 
+
+html, body {
+   height: 100vh;
+}
+
 body {
   background: #f5f5f5;
   padding: 1em;
   font-family: $font-2;
   color: $gray;
+  margin: 0 2em;
+  border-left: 1px solid $light-gray;
+  border-right: 1px solid $light-gray;
 }
 
 .site-name {
@@ -20,8 +28,7 @@ body {
 }
 
 .accent {
-  overflow: hidden;
-  a {
+  a, small {
     position: relative;
     display: inline-block;
     &:before, &:after {
@@ -54,6 +61,5 @@ a {
 
 .footer {
   text-align: center;
-  border-top: 1px solid $light-gray;
   padding: 1em;
 }

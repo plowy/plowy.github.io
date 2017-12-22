@@ -1,24 +1,25 @@
 @charset "UTF-8";
-body { background: #f5f5f5; padding: 1em; font-family: "Source Sans Pro"; color: #4c4c4f; }
+html, body { height: 100vh; }
+
+body { background: #f5f5f5; padding: 1em; font-family: "Source Sans Pro"; color: #4c4c4f; margin: 0 2em; border-left: 1px solid #bbbbbb; border-right: 1px solid #bbbbbb; }
 
 .site-name { font-family: "Chivo"; font-size: 2em; }
 .site-name a { color: #4c4c4f; }
 
-.accent { overflow: hidden; }
-.accent a { position: relative; display: inline-block; }
-.accent a:before, .accent a:after { content: ""; position: absolute; top: 50%; height: 1px; width: 9999px; display: block; background-color: #bbbbbb; }
-.accent a:before { right: 100%; margin-right: 0.5em; }
-.accent a:after { left: 100%; margin-left: 0.5em; }
+.accent a, .accent small { position: relative; display: inline-block; }
+.accent a:before, .accent a:after, .accent small:before, .accent small:after { content: ""; position: absolute; top: 50%; height: 1px; width: 9999px; display: block; background-color: #bbbbbb; }
+.accent a:before, .accent small:before { right: 100%; margin-right: 0.5em; }
+.accent a:after, .accent small:after { left: 100%; margin-left: 0.5em; }
 
 p { line-height: 1.6; }
 
 a { text-decoration: none; }
 
-.footer { text-align: center; border-top: 1px solid #bbbbbb; padding: 1em; }
+.footer { text-align: center; padding: 1em; }
 
 .sidebar { grid-area: sidebar; }
 
-.content { padding: 2em; background-color: #fff; grid-area: content; }
+.content { padding: 2em; min-height: 500px; background-color: #fff; grid-area: content; }
 
 .header { grid-area: header; }
 
