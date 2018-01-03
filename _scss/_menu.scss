@@ -8,7 +8,10 @@
     border-top: 1px solid $light-gray;
     border-left: 1px solid $light-gray;
     border-right: 1px solid $light-gray;
+    // border: 1px solid $light-gray;
     cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
   }
   .dropdown {
     &:after {
@@ -26,6 +29,8 @@
   padding-left: 1em;
   display: none;
   li {
+    // text-transform: uppercase;
+    // letter-spacing: 1px;
     font-family: $font-2;
     font-size: .9em;
     margin: .5em 0 0 0;

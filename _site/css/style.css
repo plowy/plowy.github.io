@@ -1,17 +1,53 @@
 @charset "UTF-8";
+/* Slider */
+.slick-slider { position: relative; display: block; box-sizing: border-box; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; -webkit-touch-callout: none; -khtml-user-select: none; -ms-touch-action: pan-y; touch-action: pan-y; -webkit-tap-highlight-color: transparent; }
+
+.slick-list { position: relative; display: block; overflow: hidden; margin: 0; padding: 0; }
+
+.slick-list:focus { outline: none; }
+
+.slick-list.dragging { cursor: pointer; cursor: hand; }
+
+.slick-slider .slick-track, .slick-slider .slick-list { -webkit-transform: translate3d(0, 0, 0); -moz-transform: translate3d(0, 0, 0); -ms-transform: translate3d(0, 0, 0); -o-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); }
+
+.slick-track { position: relative; top: 0; left: 0; display: block; }
+
+.slick-track:before, .slick-track:after { display: table; content: ''; }
+
+.slick-track:after { clear: both; }
+
+.slick-loading .slick-track { visibility: hidden; }
+
+.slick-slide { display: none; float: left; height: 100%; min-height: 1px; }
+
+[dir='rtl'] .slick-slide { float: right; }
+
+.slick-slide img { display: block; }
+
+.slick-slide.slick-loading img { display: none; }
+
+.slick-slide.dragging img { pointer-events: none; }
+
+.slick-initialized .slick-slide { display: block; }
+
+.slick-loading .slick-slide { visibility: hidden; }
+
+.slick-vertical .slick-slide { display: block; height: auto; border: 1px solid transparent; }
+
+.slick-arrow.slick-hidden { display: none; }
+
 html, body { height: 100vh; }
 
-body { background: #f5f5f5; padding: 1em; font-family: "Source Sans Pro"; color: #4c4c4f; margin: 0 2em; border-left: 1px solid #bbbbbb; border-right: 1px solid #bbbbbb; }
+body { background: #fff; font-family: "Source Sans Pro"; color: #4c4c4f; }
 
-h1, h2, h3, h4, h5, h6 { margin: 0; padding: 0; }
+p { max-width: 450px; margin-bottom: 0; }
+
+a, a:visited, a:focus { color: #0040FF; }
+
+a:hover { color: #3366ff; }
 
 .site-name { font-family: "Chivo"; font-size: 2em; margin: .67em 0; }
 .site-name a { color: #4c4c4f; }
-
-.accent a, .accent small { position: relative; display: inline-block; }
-.accent a:before, .accent a:after, .accent small:before, .accent small:after { content: ""; position: absolute; top: 50%; height: 1px; width: 9999px; display: block; background-color: #bbbbbb; }
-.accent a:before, .accent small:before { right: 100%; margin-right: 0.5em; }
-.accent a:after, .accent small:after { left: 100%; margin-left: 0.5em; }
 
 p { line-height: 1.6; }
 
@@ -19,21 +55,20 @@ a { text-decoration: none; }
 
 .footer { text-align: center; padding: 1em; }
 
-.sidebar { grid-area: sidebar; }
+img { max-width: 100%; max-height: 670px; }
 
-.content { padding: 2em 2em 0 2em; background-color: #fff; grid-area: content; }
+.photos-nav img { max-height: 117px; }
 
-.header { grid-area: header; }
+.wrapper { margin: 0 1em; }
 
-.footer { grid-area: footer; }
+.sidebar { padding: 1em; }
 
-.wrapper { margin: 0 1em; display: grid; grid-gap: 1em; grid-template-areas: "header" "sidebar" "content" "footer"; }
+.content { padding: 1em; }
 
-@media only screen and (min-width: 700px) { .wrapper { max-width: 1000px; margin: 0 auto; grid-template-columns: 25% auto; grid-template-areas: "header   header" "sidebar  content" "footer   footer"; }
-  .content { min-height: 500px; } }
-img { max-width: 100%; }
-
-.menu .dropdown, .menu .menu-link { display: block; padding: 1em; margin-bottom: .5em; font-family: "Source Sans Pro"; font-weight: 500; border-top: 1px solid #bbbbbb; border-left: 1px solid #bbbbbb; border-right: 1px solid #bbbbbb; cursor: pointer; }
+@media only screen and (min-width: 700px) { .wrapper { display: flex; max-width: 1200px; margin: 0 auto; }
+  .sidebar { width: 30%; }
+  .content { width: 70%; } }
+.menu .dropdown, .menu .menu-link { display: block; padding: 1em; margin-bottom: .5em; font-family: "Source Sans Pro"; font-weight: 500; border-top: 1px solid #bbbbbb; border-left: 1px solid #bbbbbb; border-right: 1px solid #bbbbbb; cursor: pointer; text-transform: uppercase; letter-spacing: 1px; }
 .menu .dropdown:after { content: "⌄"; float: right; }
 .menu .menu-link { color: #4c4c4f; }
 
@@ -41,3 +76,5 @@ img { max-width: 100%; }
 .submenu li { font-family: "Source Sans Pro"; font-size: .9em; margin: .5em 0 0 0; padding: 0; cursor: pointer; }
 
 .dropdown-open:checked + .submenu { display: block; }
+
+.photos-nav img { margin: 1em 1em 1em 0; }

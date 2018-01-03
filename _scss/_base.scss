@@ -3,25 +3,43 @@ $font-2: "Source Sans Pro";
 
 $gray: #4c4c4f;
 $light-gray: #bbbbbb;
+$link: #0040FF;
 
+$breakpoint-lg: 1200px;
+$breakpoint-md: 700px;
 
 html, body {
    height: 100vh;
 }
 
 body {
-  background: #f5f5f5;
-  padding: 1em;
+  // background: #f5f5f5;
+  background: #fff;
+  // padding: 1em;
   font-family: $font-2;
   color: $gray;
-  margin: 0 2em;
-  border-left: 1px solid $light-gray;
-  border-right: 1px solid $light-gray;
+  // margin: 0 2em;
+  // border-left: 1px solid $light-gray;
+  // border-right: 1px solid $light-gray;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  margin: 0;
-  padding: 0;
+// h1, h2, h3, h4, h5, h6 {
+//   margin: 1.3em 0;
+//   padding: 0;
+//   font-size: 1.5em;
+// }
+
+p {
+  max-width: 450px;
+  margin-bottom: 0;
+}
+
+a, a:visited, a:focus {
+  color: $link;
+}
+
+a:hover {
+  color: lighten($link, 10%);
 }
 
 .site-name {
@@ -33,29 +51,29 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-.accent {
-  a, small {
-    position: relative;
-    display: inline-block;
-    &:before, &:after {
-      content: "";
-      position: absolute;
-      top: 50%;
-      height: 1px;
-      width: 9999px;
-      display: block;
-      background-color: $light-gray;
-    }
-    &:before {
-      right: 100%;
-      margin-right: 0.5em;
-    }
-    &:after {
-      left: 100%;
-      margin-left: 0.5em;
-    }
-  }
-}
+// .accent {
+//   a, small {
+//     position: relative;
+//     display: inline-block;
+//     &:before, &:after {
+//       content: "";
+//       position: absolute;
+//       top: 50%;
+//       height: 1px;
+//       width: 9999px;
+//       display: block;
+//       background-color: $light-gray;
+//     }
+//     &:before {
+//       right: 100%;
+//       margin-right: 0.5em;
+//     }
+//     &:after {
+//       left: 100%;
+//       margin-left: 0.5em;
+//     }
+//   }
+// }
 
 p {
   line-height: 1.6;
@@ -65,7 +83,24 @@ a {
   text-decoration: none;
 }
 
+
 .footer {
   text-align: center;
   padding: 1em;
+}
+
+// .slick-list {
+//   width: 100vw;
+// }
+
+img {
+  max-width: 100%;
+  max-height: 670px;
+  // @media screen and (min-width: $breakpoint-md) {
+  //   max-width: 868px;
+  // }
+}
+
+.photos-nav img {
+  max-height: 117px;
 }
