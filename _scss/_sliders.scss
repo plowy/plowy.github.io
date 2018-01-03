@@ -1,3 +1,26 @@
+img {
+  max-width: 100%;
+  max-height: 670px;
+  // @media screen and (min-width: $breakpoint-md) {
+  //   max-width: 868px;
+  // }
+}
+
 .photos-nav img {
   margin: 1em 1em 1em 0;
+  max-height: 117px;
+}
+
+.slider-info {
+  margin: 1em 0;
+  p {
+    margin: 0;
+  }
+  button {
+      -webkit-appearance: none;
+      font-family: $font;
+  }
+  .prev-arrow {
+
+  }
 }

@@ -20,11 +20,13 @@
       $('.photos').slick({
        slidesToShow: 1,
        slidesToScroll: 1,
-       arrows: false,
+       arrows: true,
        speed: 500,
        cssEase: 'linear',
        fade: true,
        asNavFor: '.photos-nav',
+       prevArrow: $('.prev-arrow'),
+       nextArrow: $('.next-arrow'),
        adaptiveHeight: true
      });
 

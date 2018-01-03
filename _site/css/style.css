@@ -22,8 +22,6 @@
 
 [dir='rtl'] .slick-slide { float: right; }
 
-.slick-slide img { display: block; }
-
 .slick-slide.slick-loading img { display: none; }
 
 .slick-slide.dragging img { pointer-events: none; }
@@ -40,34 +38,29 @@ html, body { height: 100vh; }
 
 body { background: #fff; font-family: "Source Sans Pro"; color: #4c4c4f; }
 
-p { max-width: 450px; margin-bottom: 0; }
-
-a, a:visited, a:focus { color: #0040FF; }
+a, a:visited, a:focus { color: #0040FF; text-decoration: none; }
 
 a:hover { color: #3366ff; }
+
+p { line-height: 1.6; }
 
 .site-name { font-family: "Chivo"; font-size: 2em; margin: .67em 0; }
 .site-name a { color: #4c4c4f; }
 
-p { line-height: 1.6; }
-
-a { text-decoration: none; }
-
-.footer { text-align: center; padding: 1em; }
-
-img { max-width: 100%; max-height: 670px; }
-
-.photos-nav img { max-height: 117px; }
+.accent { position: relative; display: inline-block; }
+.accent:before, .accent:after { content: ""; position: absolute; top: 50%; height: 1px; width: 9999px; display: block; background-color: #bbbbbb; }
+.accent:before { right: 100%; margin-right: 0.5em; }
+.accent:after { left: 100%; margin-left: 0.5em; }
 
 .wrapper { margin: 0 1em; }
 
 .sidebar { padding: 1em; }
 
-.content { padding: 1em; }
+.content { padding: 1em; text-align: center; }
 
 @media only screen and (min-width: 700px) { .wrapper { display: flex; max-width: 1200px; margin: 0 auto; }
-  .sidebar { width: 30%; }
-  .content { width: 70%; } }
+  .sidebar { width: 40%; }
+  .content { width: 60%; } }
 .menu .dropdown, .menu .menu-link { display: block; padding: 1em; margin-bottom: .5em; font-family: "Source Sans Pro"; font-weight: 500; border-top: 1px solid #bbbbbb; border-left: 1px solid #bbbbbb; border-right: 1px solid #bbbbbb; cursor: pointer; text-transform: uppercase; letter-spacing: 1px; }
 .menu .dropdown:after { content: "⌄"; float: right; }
 .menu .menu-link { color: #4c4c4f; }
@@ -77,4 +70,10 @@ img { max-width: 100%; max-height: 670px; }
 
 .dropdown-open:checked + .submenu { display: block; }
 
-.photos-nav img { margin: 1em 1em 1em 0; }
+img { max-width: 100%; max-height: 670px; }
+
+.photos-nav img { margin: 1em 1em 1em 0; max-height: 117px; }
+
+.slider-info { margin: 1em 0; }
+.slider-info p { margin: 0; }
+.slider-info button { -webkit-appearance: none; font-family: "Chivo"; }

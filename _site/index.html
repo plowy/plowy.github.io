@@ -22,11 +22,13 @@
       $('.photos').slick({
        slidesToShow: 1,
        slidesToScroll: 1,
-       arrows: false,
+       arrows: true,
        speed: 500,
        cssEase: 'linear',
        fade: true,
        asNavFor: '.photos-nav',
+       prevArrow: $('.prev-arrow'),
+       nextArrow: $('.next-arrow'),
        adaptiveHeight: true
      });
 
@@ -37,15 +39,7 @@
         dots: false,
         arrows: false,
         variableWidth: true,
-        focusOnSelect: true,
-        // responsive: [
-        //   {
-        //     breakpoint: 650,
-        //     settings: {
-        //       slidesToShow: 3
-        //     }
-        //   }
-        // ]
+        focusOnSelect: true
       });
     });
   </script>
@@ -55,7 +49,7 @@
 <body>
   <div class="wrapper">
     <div class="sidebar">
-      <h1 class="site-name accent"><a href="/">Patty Lowy</a></h1>
+      <h1 class="site-name"><a href="/">Patty Lowy</a></h1>
 
       <div class="menu">
   <label class="dropdown" for="paintings">Paintings</label>
@@ -89,8 +83,8 @@
 
     </div>
     <div class="content">
-      <img src="img/paintings/landscapes/IMG_0862.jpg" alt="Pocantico">
-<br><p><em>Pocantico #2</em><br> 16" x 20"</p>
+      <p>Pocantico #2 - 16" x 20"</p>
+<img src="img/paintings/landscapes/IMG_0862.jpg" alt="Pocantico">
 
     </div>
   </div>
