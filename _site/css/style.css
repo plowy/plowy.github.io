@@ -59,7 +59,7 @@ p { line-height: 1.6; }
 .content { padding: 1em; text-align: center; }
 
 @media only screen and (min-width: 700px) { .wrapper { display: flex; max-width: 1200px; margin: 0 auto; }
-  .sidebar { width: 40%; }
+  .sidebar { width: 30%; }
   .content { width: 60%; } }
 .menu .dropdown, .menu .menu-link { display: block; padding: 1em; margin-bottom: .5em; font-family: "Source Sans Pro"; font-weight: 500; border-top: 1px solid #bbbbbb; border-left: 1px solid #bbbbbb; border-right: 1px solid #bbbbbb; cursor: pointer; text-transform: uppercase; letter-spacing: 1px; }
 .menu .dropdown:after { content: "⌄"; float: right; }
