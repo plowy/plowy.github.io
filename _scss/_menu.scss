@@ -15,6 +15,7 @@
       content: "⌄";
       float: left;
       margin-right: 10px;
+      // transition: .15s ease-in-out;
     }
   }
   .menu-link {
@@ -37,8 +38,15 @@
   }
 }
 
-.dropdown-open:checked + .submenu {
+.dropdown-open:checked + .dropdown + .submenu {
   display: block;
+}
+
+.dropdown-open:checked + .dropdown {
+  &:before {
+    transform: rotate(-180deg);
+    // transition: .15s ease-in-out;
+  }
 }
 
 // Desktop menu styles
