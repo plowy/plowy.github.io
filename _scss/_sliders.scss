@@ -1,6 +1,7 @@
 img {
   max-width: 100%;
   max-height: 670px;
+  -webkit-filter: brightness(120%);
   // @media screen and (min-width: $breakpoint-md) {
   //   max-width: 868px;
   // }
@@ -12,13 +13,19 @@ img {
 }
 
 .slider-info {
-  margin: 1em 0;
-  p {
+  .caption {
     margin: 0;
+    font-style: italic;
   }
+  margin: 1em 0;
+  display: flex;
+  justify-content: space-between;
+  align-content: middle;
   button {
-      -webkit-appearance: none;
-      font-family: $font;
+    -webkit-appearance: none;
+    border: 0;
+    font-weight: bold;
+    cursor: pointer;
   }
   .prev-arrow {
 

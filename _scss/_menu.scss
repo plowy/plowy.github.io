@@ -1,36 +1,34 @@
+// Mobile Menu styles
 .menu {
   .dropdown, .menu-link {
     display: block;
-    padding: 1em;
+    padding: 1em 0;
     margin-bottom: .5em;
     font-family: $font-2;
     font-weight: 500;
-    border-top: 1px solid $light-gray;
-    border-left: 1px solid $light-gray;
-    border-right: 1px solid $light-gray;
-    // border: 1px solid $light-gray;
     cursor: pointer;
     text-transform: uppercase;
     letter-spacing: 1px;
   }
   .dropdown {
-    &:after {
+    &:before {
       content: "⌄";
-      float: right;
+      float: left;
+      margin-right: 10px;
     }
   }
   .menu-link {
     color: $gray;
+    padding-left: 1.3em;
   }
 }
 
 .submenu {
   list-style: none;
-  padding-left: 1em;
+  padding-left: 1.3em;
   display: none;
+  margin-top: 0;
   li {
-    // text-transform: uppercase;
-    // letter-spacing: 1px;
     font-family: $font-2;
     font-size: .9em;
     margin: .5em 0 0 0;
@@ -41,4 +39,26 @@
 
 .dropdown-open:checked + .submenu {
   display: block;
+}
+
+// Desktop menu styles
+@media screen and (min-width: $breakpoint-md) {
+  .menu {
+    .dropdown {
+      // border: 0;
+      // padding: 1em 0;
+    }
+    .dropdown {
+      // cursor: auto;
+      // &:before {
+      //   content: "";
+      //   float: none;
+      //   margin-right: 0;
+      // }
+    }
+  }
+  .submenu {
+    // display: block;
+    // color: $medium-gray;
+  }
 }

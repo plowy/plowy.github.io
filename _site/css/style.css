@@ -34,13 +34,13 @@
 
 .slick-arrow.slick-hidden { display: none; }
 
-html, body { height: 100vh; }
-
 body { background: #fff; font-family: "Source Sans Pro"; color: #4c4c4f; }
 
-a, a:visited, a:focus { color: #0040FF; text-decoration: none; }
+:focus { outline: none; }
 
-a:hover { color: #3366ff; }
+a, a:visited, a:focus { color: #656569; text-decoration: none; }
+
+a:hover { color: #7e7e83; }
 
 p { line-height: 1.6; }
 
@@ -52,28 +52,30 @@ p { line-height: 1.6; }
 .accent:before { right: 100%; margin-right: 0.5em; }
 .accent:after { left: 100%; margin-left: 0.5em; }
 
+.caption { font-style: italic; }
+
 .wrapper { margin: 0 1em; }
 
 .sidebar { padding: 1em; }
 
-.content { padding: 1em; text-align: center; }
+.content { padding: 1em; text-align: center; align-self: center; }
 
 @media only screen and (min-width: 700px) { .wrapper { display: flex; max-width: 1200px; margin: 0 auto; }
   .sidebar { width: 30%; }
   .content { width: 60%; } }
-.menu .dropdown, .menu .menu-link { display: block; padding: 1em; margin-bottom: .5em; font-family: "Source Sans Pro"; font-weight: 500; border-top: 1px solid #bbbbbb; border-left: 1px solid #bbbbbb; border-right: 1px solid #bbbbbb; cursor: pointer; text-transform: uppercase; letter-spacing: 1px; }
-.menu .dropdown:after { content: "⌄"; float: right; }
-.menu .menu-link { color: #4c4c4f; }
+.menu .dropdown, .menu .menu-link { display: block; padding: 1em 0; margin-bottom: .5em; font-family: "Source Sans Pro"; font-weight: 500; cursor: pointer; text-transform: uppercase; letter-spacing: 1px; }
+.menu .dropdown:before { content: "⌄"; float: left; margin-right: 10px; }
+.menu .menu-link { color: #4c4c4f; padding-left: 1.3em; }
 
-.submenu { list-style: none; padding-left: 1em; display: none; }
+.submenu { list-style: none; padding-left: 1.3em; display: none; margin-top: 0; }
 .submenu li { font-family: "Source Sans Pro"; font-size: .9em; margin: .5em 0 0 0; padding: 0; cursor: pointer; }
 
 .dropdown-open:checked + .submenu { display: block; }
 
-img { max-width: 100%; max-height: 670px; }
+img { max-width: 100%; max-height: 670px; -webkit-filter: brightness(120%); }
 
 .photos-nav img { margin: 1em 1em 1em 0; max-height: 117px; }
 
-.slider-info { margin: 1em 0; }
-.slider-info p { margin: 0; }
-.slider-info button { -webkit-appearance: none; font-family: "Chivo"; }
+.slider-info { margin: 1em 0; display: flex; justify-content: space-between; align-content: middle; }
+.slider-info .caption { margin: 0; font-style: italic; }
+.slider-info button { -webkit-appearance: none; border: 0; font-weight: bold; cursor: pointer; }
