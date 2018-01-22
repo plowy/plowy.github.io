@@ -7,7 +7,7 @@ layout: default
   <button class="next-arrow">⟶</button>
 </div>
 
-<div class="photos">
+<div class="photos {{ page.category }}">
   {% for image in page.gallery %}
     <div>
       <p class="caption">{{image.title}} - {{image.dimensions}}</p>

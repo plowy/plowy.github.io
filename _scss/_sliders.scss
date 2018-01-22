@@ -18,6 +18,11 @@
     max-height: 670px;
     margin: 0 auto;
   }
+  &.paintings {
+    img {
+      -webkit-filter: brightness(120%);
+    }
+  }
   margin-top: -3.3em;
   .caption {
     display: inline-block;
