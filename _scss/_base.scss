@@ -9,35 +9,15 @@ $link: $medium-gray;
 $breakpoint-lg: 1200px;
 $breakpoint-md: 700px;
 
-// html, body {
-//    height: 100vh;
-// }
-
 body {
-  // background: #f5f5f5;
   background: #fff;
-  // padding: 1em;
   font-family: $font-2;
   color: $gray;
-  // margin: 0 2em;
-  // border-left: 1px solid $light-gray;
-  // border-right: 1px solid $light-gray;
 }
 
 :focus {
   outline: none;
 }
-
-// h1, h2, h3, h4, h5, h6 {
-//   margin: 1.3em 0;
-//   padding: 0;
-//   font-size: 1.5em;
-// }
-//
-// p {
-//   max-width: 450px;
-//   margin-bottom: 0;
-// }
 
 a, a:visited, a:focus {
   color: $link;
@@ -57,7 +37,7 @@ p {
   font-size: 2em;
   margin: .67em 0;
   a {
-    color: $gray;
+    color: #000000;
   }
 }
 

@@ -22,6 +22,8 @@
 
 [dir='rtl'] .slick-slide { float: right; }
 
+.slick-slide img { display: block; }
+
 .slick-slide.slick-loading img { display: none; }
 
 .slick-slide.dragging img { pointer-events: none; }
@@ -45,7 +47,7 @@ a:hover { color: #7e7e83; }
 p { line-height: 1.6; }
 
 .site-name { font-family: "Chivo"; font-size: 2em; margin: .67em 0; }
-.site-name a { color: #4c4c4f; }
+.site-name a { color: #000000; }
 
 .accent { position: relative; display: inline-block; }
 .accent:before, .accent:after { content: ""; position: absolute; top: 50%; height: 1px; width: 9999px; display: block; background-color: #bbbbbb; }
@@ -74,10 +76,11 @@ p { line-height: 1.6; }
 
 .dropdown-open:checked + .dropdown:before { transform: rotate(-180deg); }
 
-img { max-width: 100%; max-height: 670px; -webkit-filter: brightness(120%); }
+.slider-info { margin: 1em 0; display: flex; justify-content: space-between; align-content: middle; }
+.slider-info button { -webkit-appearance: none; border: 0; font-weight: bold; cursor: pointer; z-index: 1000; }
+
+.photos { margin-top: -3.3em; }
+.photos img { max-width: 100%; max-height: 670px; margin: 0 auto; }
+.photos .caption { display: inline-block; }
 
 .photos-nav img { margin: 1em 1em 1em 0; max-height: 117px; }
-
-.slider-info { margin: 1em 0; display: flex; justify-content: space-between; align-content: middle; }
-.slider-info .caption { margin: 0; font-style: italic; }
-.slider-info button { -webkit-appearance: none; border: 0; font-weight: bold; cursor: pointer; }

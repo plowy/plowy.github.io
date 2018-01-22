@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Patty Lowy</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Patty Lowy</title>
+  <meta name="description" content="Patty Lowy site description.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro|Chivo" rel="stylesheet">
+
+  <link rel="stylesheet" href="/css/style.css">
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="/js/slick.min.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.photos').slick({
+       slidesToShow: 1,
+       slidesToScroll: 1,
+       arrows: true,
+       speed: 500,
+       cssEase: 'linear',
+       fade: true,
+       asNavFor: '.photos-nav',
+       prevArrow: $('.prev-arrow'),
+       nextArrow: $('.next-arrow'),
+       adaptiveHeight: true
+     });
+
+      $('.photos-nav').slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        asNavFor: '.photos',
+        dots: false,
+        arrows: false,
+        variableWidth: true,
+        focusOnSelect: true
+      });
+    });
+  </script>
+
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="sidebar">
+      <h1 class="site-name"><a href="/">Patty Lowy</a></h1>
+
+      <div class="menu">
+  
+    <input class="dropdown-open" type="checkbox" id="paintings" aria-hidden="true" hidden/>
+    <label class="dropdown" for="paintings">Paintings</label>
+    <ul class="submenu">
+      
+        <li><a href="/paintings/landscapes.html">Landscapes</a></li>
+      
+        <li><a href="/paintings/interiors-still-lifes.html">Interiors & Still lifes</a></li>
+      
+        <li><a href="/paintings/figures.html">Figures</a></li>
+      
+    </ul>
+  
+    <input class="dropdown-open" type="checkbox" id="prints" aria-hidden="true" hidden/>
+    <label class="dropdown" for="prints">Prints</label>
+    <ul class="submenu">
+      
+        <li><a href="/prints/still-lifes.html">Still Lifes</a></li>
+      
+        <li><a href="/prints/trees.html">Trees</a></li>
+      
+    </ul>
+  
+    <input class="dropdown-open" type="checkbox" id="drawings" aria-hidden="true" hidden/>
+    <label class="dropdown" for="drawings">Drawings</label>
+    <ul class="submenu">
+      
+        <li><a href="/drawings/still-lifes.html">Still Lifes</a></li>
+      
+        <li><a href="/drawings/interiors.html">Interiors</a></li>
+      
+        <li><a href="/drawings/figures.html">Figures</a></li>
+      
+    </ul>
+  
+    <input class="dropdown-open" type="checkbox" id="graphics-comics" aria-hidden="true" hidden/>
+    <label class="dropdown" for="graphics-comics">Graphics & Comics</label>
+    <ul class="submenu">
+      
+        <li><a href="/graphics-comics/charcoal-drawings.html">Charcoal Drawings</a></li>
+      
+        <li><a href="/graphics-comics/cards-announcements.html">Cards & Announcements</a></li>
+      
+    </ul>
+  
+  <a class="menu-link" href="/about">About</a>
+</div>
+
+    </div>
+    <div class="content">
+      <div class="slider-info" style="">
+  <button class="prev-arrow">⟵</button>
+  <button class="next-arrow">⟶</button>
+</div>
+
+<div class="photos">
+  
+    <div>
+      <p class="caption">Still Life with Perfume Bottle - 12" x 21"</p>
+      <img src="/img/prints/still-lifes/IMG_0910.jpg"
+       alt="Still Life with Perfume Bottle" />
+    </div>
+  
+    <div>
+      <p class="caption">Three Onions - 18" x 24"</p>
+      <img src="/img/prints/still-lifes/IMG_0917.jpg"
+       alt="Three Onions" />
+    </div>
+  
+</div>
+
+<div class="photos-nav">
+  
+    <div>
+      <img src="/img/prints/still-lifes/IMG_0910.jpg"
+      alt="Still Life with Perfume Bottle thumbnail" />
+    </div>
+  
+    <div>
+      <img src="/img/prints/still-lifes/IMG_0917.jpg"
+      alt="Three Onions thumbnail" />
+    </div>
+  
+</div>
+
+    </div>
+  </div>
+</body>
+</html>

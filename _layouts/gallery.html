@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<div class="slider-info" style="">
+  <button class="prev-arrow">⟵</button>
+  <button class="next-arrow">⟶</button>
+</div>
+
+<div class="photos">
+  {% for image in page.gallery %}
+    <div>
+      <p class="caption">{{image.title}} - {{image.dimensions}}</p>
+      <img src="/img/{{ page.category }}/{{ page.series }}/{{ image.filename }}"
+       alt="{{ image.title }}" />
+    </div>
+  {% endfor %}
+</div>
+
+<div class="photos-nav">
+  {% for image in page.gallery %}
+    <div>
+      <img src="/img/{{ page.category }}/{{ page.series }}/{{ image.filename }}"
+      alt="{{ image.title }} thumbnail" />
+    </div>
+  {% endfor %}
+</div>

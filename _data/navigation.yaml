@@ -1,0 +1,35 @@
+- title: Paintings
+  slug: paintings
+  series:
+    - page: Landscapes
+      slug: landscapes
+    - page: Interiors & Still lifes
+      slug: interiors-still-lifes
+    - page: Figures
+      slug: figures
+
+- title: Prints
+  slug: prints
+  series:
+    - page: Still Lifes
+      slug: still-lifes
+    - page: Trees
+      slug: trees
+
+- title: Drawings
+  slug: drawings
+  series:
+    - page: Still Lifes
+      slug: still-lifes
+    - page: Interiors
+      slug: interiors
+    - page: Figures
+      slug: figures
+
+- title: Graphics & Comics
+  slug: graphics-comics
+  series:
+    - page: Charcoal Drawings
+      slug: charcoal-drawings
+    - page: Cards & Announcements
+      slug: cards-announcements
