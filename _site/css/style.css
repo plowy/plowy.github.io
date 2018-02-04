@@ -56,6 +56,8 @@ p { line-height: 1.6; }
 
 .caption { font-style: italic; }
 
+.responsive { max-width: 100%; }
+
 .wrapper { margin: 0 1em; }
 
 .sidebar { padding: 1em; }
@@ -89,5 +91,7 @@ p { line-height: 1.6; }
 .photos.paintings img { -webkit-filter: brightness(120%); }
 .photos .caption { display: inline-block; }
 @media screen and (min-width: 1200px) { .photos .slick-slide { height: 630px; } }
+
+@media screen and (max-width: 700px) { .photos-nav { display: none; } }
 
 .photos-nav img { margin: 1em 1em 1em 0; max-height: 117px; }
