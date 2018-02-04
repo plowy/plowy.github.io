@@ -88,7 +88,6 @@ p { line-height: 1.6; }
 .photos img { max-width: 100%; max-height: 670px; margin: 0 auto; }
 .photos.paintings img { -webkit-filter: brightness(120%); }
 .photos .caption { display: inline-block; }
+@media screen and (min-width: 1200px) { .photos .slick-slide { height: 630px; } }
 
 .photos-nav img { margin: 1em 1em 1em 0; max-height: 117px; }
-
-@media screen and (min-width: 1200px) { .slick-slide { min-height: 630px; } }

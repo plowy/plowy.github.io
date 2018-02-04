@@ -10,7 +10,7 @@ layout: default
 <div class="photos {{ page.category }}">
   {% for image in page.gallery %}
     <div>
-      <p class="caption">{{image.title}} - {{image.dimensions}}</p>
+      <p class="caption">{{image.title}} {% if image.dimensions %} &ndash; {{image.dimensions}} {% endif %}</p>
       <img src="/img/{{ page.category }}/{{ page.series }}/{{ image.filename }}"
        alt="{{ image.title }}" />
     </div>
