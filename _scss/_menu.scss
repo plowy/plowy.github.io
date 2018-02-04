@@ -44,7 +44,6 @@
 .dropdown-open:checked + .dropdown {
   &:before {
     transform: rotate(-180deg);
-    // transition: .15s ease-in-out;
   }
 }
 
@@ -52,20 +51,23 @@
 @media screen and (min-width: $breakpoint-md) {
   .menu {
     .dropdown {
-      // border: 0;
-      // padding: 1em 0;
+      border: 0;
+      padding: 1em 0;
     }
     .dropdown {
-      // cursor: auto;
-      // &:before {
-      //   content: "";
-      //   float: none;
-      //   margin-right: 0;
-      // }
+      cursor: auto;
+      &:before {
+        content: "";
+        float: none;
+        margin-right: 0;
+      }
+    }
+    .menu-link {
+      padding-left: 0;
     }
   }
   .submenu {
-    // display: block;
-    // color: $medium-gray;
+    display: block;
+    color: $medium-gray;
   }
 }

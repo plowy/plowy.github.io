@@ -33,3 +33,9 @@
   margin: 1em 1em 1em 0;
   max-height: 117px;
 }
+
+.slick-slide {
+  @media screen and (min-width: $breakpoint-lg) {
+    min-height: 630px;
+  }
+}

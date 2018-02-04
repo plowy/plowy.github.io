@@ -76,6 +76,11 @@ p { line-height: 1.6; }
 
 .dropdown-open:checked + .dropdown:before { transform: rotate(-180deg); }
 
+@media screen and (min-width: 700px) { .menu .dropdown { border: 0; padding: 1em 0; }
+  .menu .dropdown { cursor: auto; }
+  .menu .dropdown:before { content: ""; float: none; margin-right: 0; }
+  .menu .menu-link { padding-left: 0; }
+  .submenu { display: block; color: #656569; } }
 .slider-info { margin: 1em 0; display: flex; justify-content: space-between; align-content: middle; }
 .slider-info button { -webkit-appearance: none; border: 0; font-weight: bold; cursor: pointer; z-index: 1000; }
 
@@ -85,3 +90,5 @@ p { line-height: 1.6; }
 .photos .caption { display: inline-block; }
 
 .photos-nav img { margin: 1em 1em 1em 0; max-height: 117px; }
+
+@media screen and (min-width: 1200px) { .slick-slide { min-height: 630px; } }
