@@ -28,7 +28,7 @@
     display: inline-block;
   }
   .slick-slide {
-    @media screen and (min-width: $breakpoint-lg) {
+    @media screen and (min-width: $breakpoint-md) {
       height: 630px;
     }
   }
