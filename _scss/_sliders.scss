@@ -26,8 +26,8 @@
   margin-top: -3.3em;
   .caption {
     display: inline-block;
+    font-size: .8em;  
     @media screen and (max-width: $breakpoint-md) {
-      font-size: .8em;
       padding-top: 0.25em;
       max-width: 190px;
     }
