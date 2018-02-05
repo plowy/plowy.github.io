@@ -29,10 +29,10 @@
   }
   .slick-slide {
     @media screen and (min-width: $breakpoint-md) {
-      height: 575px;
+      min-height: 575px;
     }
     @media screen and (min-width: $breakpoint-lg) {
-      height: 630px;
+      min-height: 630px;
     }
   }
 }
