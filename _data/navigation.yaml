@@ -17,6 +17,8 @@
 - title: Drawings
   slug: drawings
   series:
+    - page: Collage
+      slug: collage
     - page: Still Lifes
       slug: still-lifes
     - page: Interiors
