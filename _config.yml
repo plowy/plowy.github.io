@@ -1,6 +1,6 @@
 # Site settings
 title: Patty Lowy
-description: As far back as I can remember I’ve been doodling, drawing, painting, printmaking and doing graphic design. Sometimes with more focus, sometimes when life overtakes me, just sketching in a small book at the beach, in the park or inside. Also, I work slowly. Now, I have the time and a little bit of space to concentrate on my painting. I’m learning to work outside which is a very different experience - I like the time limit - to get it down before the light disappears.
+description: Patty is an artist in New York City, painting, drawing, and printmaking.
 url: "http://pattylowy.com" # the base hostname & protocol for your site
 sass:
     sass_dir: _scss
