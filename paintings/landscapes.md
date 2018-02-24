@@ -28,7 +28,7 @@ gallery:
   - title: Lucy's
     filename: IMG_0868.jpg
     dimensions: 16" x 20"
-  - title: 'In Front of the Cottage #1'
+  - title: 'In Front of the Cottage #3'
     filename: IMG_0869.jpg
     dimensions: 16" x 20"
   - title: Dan on the Porch
@@ -61,7 +61,7 @@ gallery:
   - title: 'Pocantico #12'
     filename: IMG_0889.jpg
     dimensions: 16" x 20"
-  - title: 'In Front of the Cottage #2'
+  - title: 'Cottage #3'
     filename: IMG_0890.jpg
     dimensions: 20" x 16"
   - title: 'Untitled'
