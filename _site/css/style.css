@@ -89,9 +89,11 @@ p { line-height: 1.6; }
 .photos { margin-top: -3.3em; }
 .photos img { max-width: 100%; max-height: 670px; margin: 0 auto; }
 .photos.paintings img { -webkit-filter: brightness(120%); }
-.photos .caption { display: inline-block; }
-@media screen and (min-width: 1200px) { .photos .slick-slide { height: 630px; } }
+.photos .caption { display: inline-block; font-size: .8em; }
+@media screen and (max-width: 700px) { .photos .caption { padding-top: 0.25em; max-width: 190px; font-size: .9em; } }
+.photos .slick-slide { min-height: 390px; }
+@media screen and (min-width: 700px) { .photos .slick-slide { min-height: 640px; } }
 
 @media screen and (max-width: 700px) { .photos-nav { display: none; } }
 
-.photos-nav img { margin: 1em 1em 1em 0; max-height: 117px; }
+.photos-nav img { margin: 1em 1em 1em 0; max-height: 100px; }
