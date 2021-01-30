@@ -3,8 +3,8 @@
   series:
     - page: Landscapes
       slug: landscapes
-    - page: Interiors & Still lifes
-      slug: interiors-still-lifes
+    - page: Figures
+      slug: figures
 
 - title: Prints
   slug: prints
@@ -21,8 +21,6 @@
       slug: collage
     - page: Still Lifes
       slug: still-lifes
-    - page: Figures
-      slug: figures
 
 - title: Graphics & Comics
   slug: graphics-comics

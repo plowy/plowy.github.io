@@ -4,6 +4,33 @@ title: Paintings › Landscapes
 category: paintings
 series: landscapes
 gallery:
+  - title: "Riverside #3"
+    filename: PL_032.jpg
+    dimensions: 14” x 11”
+  - title: "Riverside #6"
+    filename: PL_033.jpg
+    dimensions: 14” x 11”
+  - title: "Riverside #7"
+    filename: PL_023.jpg
+    dimensions: 24” x 20”
+  - title: "Riverside #8"
+    filename: PL_021.jpg
+    dimensions: 36” x 24”
+  - title: "Lower Saranac #2"
+    filename: PL_002.jpg
+    dimensions: 9” x 11 ½”
+  - title: "Lower Saranac #5"
+    filename: PL_005.jpg
+    dimensions: 9” x 6 ½”
+  - title: "Lower Saranac	 #7"
+    filename: PL_007.jpg
+    dimensions: 9” x 11”
+  - title: "Lower Saranac #8"
+    filename: PL_008.jpg
+    dimensions: 9” x 11 ½”
+  - title: "Lower Saranac #15"
+    filename: PL_015.jpg
+    dimensions: 8 ½” x 11 ¼”
   - title: "Pocantico #2"
     filename: IMG_0862.jpg
     dimensions: 16" x 20"
